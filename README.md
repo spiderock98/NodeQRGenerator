@@ -1,1 +1,1 @@
-# AutoReloadExpressEJS
+# QR Simple Generator
