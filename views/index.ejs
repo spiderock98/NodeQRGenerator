@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title><%= title %></title>
+  <h1><%= data%></h1>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <h1><%= title %></h1>
+
+  <form action="/getQR" method="get">
+    <input type="text" name="text" id="text" required>
+    <input type="submit" value="Submit">
+  </form>
+  <img src="<%- qrURL%>" alt="">
+</body>
+
+</html>
