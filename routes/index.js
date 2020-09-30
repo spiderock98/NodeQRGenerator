@@ -6,7 +6,7 @@ var QRCode = require('qrcode')
 /* GET home page. */
 router.get('/', function (req, res, next) {
   QRCode.toDataURL('I am a pony!').then(url => {
-    res.render('index', { title: 'Hello World from Simple QR Generator', qrURL: url });
+    res.render('index', { title: 'Hello World from Simple QR Generator', data: "", qrURL: url });
   })
     .catch(err => { throw err })
 });
